@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenAI Text Generation</title>
+  <link rel="stylesheet" href="assets5/css/lib/bootstrap.min.css">
+  <link rel="stylesheet" href="assets5/css/text.css">
+</head>
+
+<body>
+ 
+  <nav style="background-color: #031c33 !important; padding-top: 5px;">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page"  href="homepage4.html">home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            convert
+          </a>
+          <ul class="dropdown-menu" style="background-color: #78828b !important;">
+            <li><a class="dropdown-item" href="TTV8.html">text to speech</a></li>
+            <li><a class="dropdown-item" href="VTT7.html">speech to text</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="editor1.html">Editor</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            AI Generator
+          </a>
+          <ul class="dropdown-menu" style="background-color: #78828b !important;">
+            <li><a class="dropdown-item" href="AI6.html">image</a></li>
+            <li><a class="dropdown-item" href="#">text</a></li>
+          </ul>
+        </li>
+    </ul>
+</nav>
+
+
+  <div class="containers">
+  <div class="wrap">
+    <h1> Unleashing the Power of Words: Exploring the Frontiers of Text Generation</h1>
+  </div>
+  <div class="box">
+ <input type="text" class="text" placeholder="write your text">
+  <button onclick="getText()" class="generateButton btn btn-primary" style="color: #fff !important;">Generate Text</button>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">textarea</label>
+    <textarea class="form-control area" id="exampleFormControlTextarea1" rows="10" cols="80"></textarea>
+  </div>
+</div>
+</div>
+
+<script src="assets5/js/lib/popper.min.js"></script>
+<script src="assets5/js/lib/jquery3.7.1.js"></script>
+<script src="assets5/js/lib/bootstrap.min.js"></script>
+  <script src="assets5/js/text.js"></script>
+</body>
+
+</html>

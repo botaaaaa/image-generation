@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workshop</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="assets1/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="assets1/css/main.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="homepage4.html">home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    convert
+                </a>
+                <ul class="dropdown-menu" style="background-color: #8acac24f !important;">
+                    <li><a class="dropdown-item" href="VTT7.html" style="color: #19c8fa !important;">speech to text</a></li>
+                    <li><a class="dropdown-item" href="TTV8.html" style="color: #19c8fa !important;">text to speech</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Editor</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    AI Generator
+                </a>
+                <ul class="dropdown-menu" style="background-color: #8acac24f !important;">
+                    <li><a class="dropdown-item" href="AI6.html" style="color: #19c8fa !important;">image</a></li>
+                    <li><a class="dropdown-item" href="text5.html" style="color: #19c8fa !important;">text</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="containers">
+        <div class="img">
+            <div class="img-box">
+                <img id="img">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="upload">
+                <label for="upload">Upload</label>
+                <input type="file" id="upload">
+            </div>
+        </div>
+        <div class="filter">
+            <ul>
+                <li>
+                    <label for="saturate">Saturate</label>
+                    <input type="range" id="saturate" min="0" max="200" value="100">
+                </li>
+                <li>
+                    <label for="contrast">Contrast</label>
+                    <input type="range" id="contrast" min="0" max="200" value="100">
+                </li>
+                <li>
+                    <label for="brightness">Brightness</label>
+                    <input type="range" id="brightness" min="0" max="200" value="100">
+                </li>
+                <li>
+                    <label for="grayscale">Grayscale</label>
+                    <input type="range" id="grayscale" min="0" max="1" value="0" step="0.1">
+                </li>
+                <li>
+                    <label for="blur">Blur</label>
+                    <input type="range" id="blur" min="0" max="10" value="0" step="0.1">
+                </li>
+                <li>
+                    <label for="hue-rotate">Hue Rotate</label>
+                    <input type="range" id="hue-rotate" min="0" max="350" value="0">
+                </li>
+                <li>
+                    <a download="image" id="download">download</a>
+                    <span onclick="resetValue()">reset</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="assets1/js/lib/popper.min.js"></script>
+    <script src="assets1/js/lib/jquery3.7.1.js"></script>
+    <script src="assets1/js/lib/bootstrap.min.js"></script>
+    <script src="assets1/js/main.js"></script>
+</body>
+
+</html>

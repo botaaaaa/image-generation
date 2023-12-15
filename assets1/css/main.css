@@ -1,0 +1,120 @@
+* {
+
+    padding: 0;
+    margin: 0;
+
+}
+
+
+body {
+
+    background: url("../images/wave-haikei.png") #333 ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+nav {
+
+    background: #2d374b;
+
+}
+
+nav ul li a{
+
+    color: #fff !important;
+     cursor: pointer;
+}
+
+.containers {
+    
+   margin-top: 10px ;
+    /* background: #222; */
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+
+}
+
+.img {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.img img, canvas {
+
+    max-width: 45vw;
+    max-height: 60vh;
+
+}
+
+.upload input {
+
+    display: none;
+
+}
+
+.upload label {
+
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px #fff solid;
+    cursor: pointer;
+
+}
+
+.filter{
+    background-color: #1e403c5e;
+    border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -ms-border-radius: 10px ;
+    -o-border-radius: 10px ;
+    padding: 10px;
+    z-index: 11;
+}
+
+.filter ul,
+.filter ul li {
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.filter ul li label {
+
+    color: #fff;
+
+}
+
+.filter ul li:last-child {
+
+    flex-direction: row;
+    justify-content: space-around;
+    color: #fff;
+
+}
+
+.filter ul li a,
+span {
+    
+    color: #fff;
+    padding: 10px 20px;
+    background: #060;
+    cursor: pointer;
+
+}
